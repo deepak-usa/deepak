@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    header { background:#111; color:#fff; padding:30px; text-align:center; }
     section { padding:40px; max-width:1000px; margin:auto; }
     h2 { color:#222; margin-bottom:15px; }
-    .highlight { background:#eee; padding:20px; border-radius:8px; margin-bottom:30px; }
+    .highlight { background:#fff; padding:25px; border-radius:8px; margin-bottom:30px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
     ul { list-style:none; padding:0; }
     ul li { margin:10px 0; padding-left:20px; position:relative; }
     ul li::before { content:"✔"; position:absolute; left:0; color:#0078D7; }
     .cta { text-align:center; margin-top:40px; }
-    .cta a { background:#0078D7; color:#fff; padding:12px 25px; text-decoration:none; border-radius:5px; }
-    .cta a:hover { background:#005fa3; }
+    .cta button { background:#0078D7; color:#fff; padding:12px 25px; border:none; border-radius:5px; cursor:pointer; }
+    .cta button:hover { background:#005fa3; }
+    form { display:flex; flex-direction:column; gap:15px; margin-top:20px; }
+    input, textarea { padding:10px; border:1px solid #ccc; border-radius:5px; width:100%; }
     footer { background:#111; color:#fff; text-align:center; padding:20px; margin-top:40px; }
   </style>
 </head>
@@ -28,29 +30,39 @@
 
 <section>
   <div class="highlight">
-    <h2>Why Collaborate With Us?</h2>
+    <h2>Why Partner With Us?</h2>
+    <p>We are a government‑registered MSME and proud Microsoft for Startups Partner. Our mission is to deliver innovative IT solutions, creative design, and secure international services. By partnering with us, you gain:</p>
     <ul>
-      <li>Access to India’s fast-growing IT market</li>
-      <li>Cost-effective web & mobile development</li>
+      <li>Access to India’s fast‑growing IT market</li>
+      <li>Cost‑effective web & mobile development</li>
       <li>Creative design services (posters, billboards, student projects)</li>
       <li>Secure international payment integration (0% GST under LUT)</li>
-      <li>Government-registered MSME credibility</li>
+      <li>Government‑registered MSME credibility</li>
       <li>Microsoft for Startups affiliation</li>
     </ul>
   </div>
 
   <div class="highlight">
     <h2>Opportunities for Investors</h2>
-    <p>As a sole proprietorship, we welcome investors from <strong>Canada, UK, USA, and Australia</strong> to join us in scaling our services globally. With transparent financials, scalable solutions, and international payment support, we are ready for joint ventures, equity partnerships, and co-branded initiatives.</p>
+    <p>As a sole proprietorship, we welcome investors from <strong>Canada, UK, USA, and Australia</strong> to join us in scaling globally. With transparent financials, scalable solutions, and international payment support, we are ready for joint ventures, equity partnerships, and co‑branded initiatives.</p>
   </div>
 
   <div class="highlight">
     <h2>Global Collaboration</h2>
-    <p>We invite IT service providers, digital marketing agencies, creative studios, startups, and entrepreneurs worldwide to collaborate with us. Together, we can deliver enterprise-grade technology with creative excellence.</p>
+    <p>We invite IT service providers, digital marketing agencies, creative studios, startups, and entrepreneurs worldwide to collaborate with us. Together, we can deliver enterprise‑grade technology with creative excellence.</p>
   </div>
 
-  <div class="cta">
-    <a href="mailto:diws2026@outlook.com">Contact Us to Partner & Invest</a>
+  <div class="highlight">
+    <h2>Partner & Investor Inquiry Form</h2>
+    <form action="mailto:diws2026@outlook.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="country" placeholder="Your Country" required>
+      <textarea name="message" rows="6" placeholder="Tell us about your partnership or investment interest..." required></textarea>
+      <div class="cta">
+        <button type="submit">Submit Inquiry</button>
+      </div>
+    </form>
   </div>
 </section>
 
